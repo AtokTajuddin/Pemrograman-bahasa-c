@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Manajemen Sistem Perpustakaan</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    table {
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Manajemen Sistem Perpustakaan</h1>
+  <form action="/tambah-buku" method="post">
+    <label>Judul:</label>
+    <input type="text" name="judul"><br><br>
+    <label>Pengarang:</label>
+    <input type="text" name="pengarang"><br><br>
+    <label>Tahun:</label>
+    <input type="number" name="tahun"><br><br>
+    <input type="submit" value="Tambah Buku">
+  </form>
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>Judul</th>
+      <th>Pengarang</th>
+      <th>Tahun</th>
+      <th>Aksi</th>
+    </tr>
+    <!-- Data buku akan ditampilkan di sini -->
+  </table>
